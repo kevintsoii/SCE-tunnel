@@ -7,3 +7,10 @@ Based off https://github.com/localtunnel/server
 ```
 node deploy.js
 ```
+
+## Run on Docker:
+
+```
+docker build -t tunnel-image .
+docker run -d -p 5000:5000 --name sce-tunnel tunnel-image
+```

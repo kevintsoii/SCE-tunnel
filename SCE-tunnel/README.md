@@ -3,5 +3,5 @@
 ## How to run:
 
 ```
-node bin/lt.js --host http://ip:port --port 8000 --s abcd
+node bin/lt.js --host http://localhost:5000 --port 8000 --s abcd
 ```

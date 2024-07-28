@@ -33,13 +33,17 @@ if (argv.help) {
     process.exit();
 }
 
+console.log('creating server')
+
 const server = CreateServer({
     max_tcp_sockets: argv['max-sockets'],
     secure: argv.secure,
 });
 
+console.log('server created')
+
 server.listen(argv.port, argv.address, () => {
-    debug('server listening on port: %d', server.address().port);
+    console.log('server listening on port: %d', server.address().port);
 });
 
 process.on('SIGINT', () => {
