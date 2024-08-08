@@ -63,7 +63,7 @@ class TunnelAgent extends Agent {
         });
 
         return new Promise((resolve) => {
-            server.listen(() => {
+            server.listen(30000, () => {
                 const port = server.address().port;
                 this.debug('tcp server listening on port: %d', port);
 
