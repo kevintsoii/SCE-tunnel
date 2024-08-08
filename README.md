@@ -1,7 +1,7 @@
 # SCE Tunnel
 
 Mirror local host websites to your domain.
-Based off of [https://github.com/localtunnel/localtunnel](localtunnel).
+Based off of [localtunnel](https://github.com/localtunnel/localtunnel).
 
 ## How it works
 
